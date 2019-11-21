@@ -1,2 +1,7 @@
 # Projets
-Page du site web programMines
+Page projets du site web programMines.
+Contributors : 
+  Anouar Zougrar .
+  Radia El Hamdouni.
+  Doha yssef.
+  Mouad Archoune.
