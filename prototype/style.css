@@ -22,10 +22,10 @@
 
 .article {
     border: 1px solid #DDDDDD;
-    overflow: auto;
+    overflow: hidden;
     display: flex;
     margin: 0 0 40px 0;
-    height: 240px;
+    /* height: 240px; */
 }
 .article > div {
     padding: 20px;
@@ -44,6 +44,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 .text {
@@ -58,7 +59,6 @@
     top: 20px;
     left: 20px;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    
 }
 
 .img-contener > img {
@@ -74,12 +74,15 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    z-index: 100;
 
     /* position: relative;
     left: 50%;
     bottom: 0px; */
+    transition: background-color 0.2s ease;
 }
 
 .show-more:hover {
-    background-color: rgb(40, 55, 95);
+    background-color: rgb(61, 82, 141);
+    transition: background-color 0.2s ease;
 }
