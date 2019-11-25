@@ -22,7 +22,7 @@
 
 .article {
     border: 1px solid #DDDDDD;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: flex;
     margin: 0 0 40px 0;
     /* height: 240px; */
@@ -34,6 +34,16 @@
 .type-1 {
     flex-direction: row-reverse;
 }
+
+.text-button {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
 
 .text-contener {
     font-family: 'Open Sans', sans-serif;

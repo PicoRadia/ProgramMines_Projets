@@ -1,29 +1,29 @@
 function showMore() {
-    let textContener = this.parentNode;
-    textContener.setAttribute('affiche','false');
-    let fog = textContener.getElementsByClassName('fog')[0];
-    let text = textContener.getElementsByClassName('text')[0];
+
+    const textButton = this.parentNode;
+    const textContener = textButton.getElementsByClassName('text-contener')[0];
+    const text = textButton.getElementsByClassName('text')[0];
+    const fog = textButton.getElementsByClassName('fog')[0];
+
+    textContener.setAttribute('affiche', 'false');    
 
     if (textContener.affiche === 'true') {
-        this.style.marginTop = '0';
-        this.innerHTML = 'afficher moin';
-        //text.style.transition = 'height 1s ease';
-        text.style.height = '152px';
-        // text.style.animationName = 'hide';
-        fog.style.display = 'block';
+        textContener.style.height = '164px';
+        fog.style.transition = 'background 1s ease';
+        fog.style.background = 'linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1))';
+
         textContener.affiche = 'false';
-    } else {
-        this.style.marginTop = '20px';
-        this.innerHTML = 'afficher moin';
-        //text.style.transition = 'height 1s ease';
-        text.style.height = 'auto';
-        // text.style.animationName = 'show';
-        fog.style.display = 'none';
+    } else {    
+        textContener.style.height = text.clientHeight + 'px';
+        fog.style.transition = 'background 1s ease';
+        fog.style.background = 'rgba(255, 255, 255, 0)';
+
         textContener.affiche = 'true';
     }
 }
 
 const buttons = document.getElementsByClassName("show-more");
+
 for (let i = 0; i < buttons.length; i++) {
     const button = buttons[i];
     button.addEventListener("click", showMore);
