@@ -1,0 +1,78 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;   
+  
+}
+
+nav{
+    width:100%;
+    margin: 0 auto;
+    position :sticky;
+    background: grey;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+
+nav li{
+    float:left;
+    width: 16%;
+    text-align: center;
+}
+
+nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+    
+}
+
+nav a{
+   
+    font-size: 20px;
+    display:block;
+    text-decoration: none;
+    color: #420D42;
+    border-bottom: 2px solid transparent;
+    padding : 10px 0px;S
+}
+
+nav a:hover{
+    color: blue;
+    border-bottom: 2px solid gold;
+    text-decoration: none;
+}
+
+#menu{
+    color:red;
+}
+
+
+.contour{
+      position: relative;
+      left: 30px;
+      top:-20px;
+      width:900px;
+      height:200px;
+      border: 1px solid black;
+      margin:120px auto;
+      padding: 100px;
+    
+}
+
+.button{
+    position: relative;
+    top:0px;
+    left:0px;
+    animation: bounce 300ms linear 0s infinite normal;
+    text-align:center;
+}
+
+
+
+
+
